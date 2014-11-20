@@ -10,19 +10,21 @@ header {
     width: 100%;
     padding-left: 3%;
     padding-right: 3%;
-    background-color: #8BC34A;
+    background-color: #7B1FA2;
     height: 50px;
     line-height: 3;
     margin: 0 auto;
-    color: #33691E;
+    color: #4A148C;
     position: fixed;
     z-index: 2;
+    color: #FFFFFF;
+    box-shadow: 0px 5px 0px #E6E7E8;
 }
 nav {
     width: 200px;
     height: 100%;
     font-size: 30px;
-    background-color: #33691E;
+    background-color: #4A148C;
     float: left;
     position: fixed;
 }
@@ -37,7 +39,7 @@ nav ul li {
     padding-bottom: 4px;
 }
 nav ul li:hover {
-    background-color: #7CB342;
+    background-color: #AB47BC;
 }
 nav ul li a {
     margin-left: 20px;
@@ -45,9 +47,9 @@ nav ul li a {
     color: #DCEDC8;
 }
 #conteudo {
-    width: 1110px;
-    height: 600px;
-    margin-left: 250px;
+    width: 83%;
+    height: 90%;
+    margin-left: 230px;
     margin-top: 60px;
     position: fixed;
     overflow: scroll;
@@ -55,29 +57,63 @@ nav ul li a {
 }
 #conteudo h1 {
     font-size: 18px;
+    color: #4A148C;
+    height: 35px;
+    line-height: 2.5;
 }
 .categoria {
     width: 100%;
     clear: both;
+    margin-top: 10px;
 }
-.quarto {
-    background-color: #F5F5F5;
+.acomodacao {
+    background-color: #FFFFFF;
     border-radius: 15px;
     width: 24%;
     margin: 5px;
-    height: 150px;
+    height: 120px;
     float: left;
+    box-shadow: 3px 5px 3px #E6E7E8;
 }
-.quarto h4 {
-    text-align: center;
-    width: 100%;
-    color: #F5F5F5;
+.acomodacao h4 {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    color: #F5F5F5;
+    line-height: 2;
 }
 .ocupado {
     background-color: #B71C1C;
 }
 .desocupado {
     background-color: #33691E;
+}
+.pedidoEspecial {
+    color: #F5F5F5;
+    width: 60px;
+    height: 60px;
+    background-image: url(notificacao.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: -37px;
+    margin-right: 5px;
+    float: right;
+}
+.pedidoEspecial span {
+    margin-top: 14px;
+    margin-left: 23px;
+    position: absolute;
+    font-size: 25px;
+    cursor: pointer;
+}
+.dadosCliente {
+    margin: 10px;
+    font-family: arial;
+    font-size: 14px;
+}
+#quantidadePessoas {
+    width: 100px;
 }

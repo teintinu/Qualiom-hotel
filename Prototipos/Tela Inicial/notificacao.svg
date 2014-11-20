@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="65.8058mm" height="73.2485mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 76 85"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil3 {fill:url(#id0);fill-rule:nonzero}
+    .fil1 {fill:url(#id1);fill-rule:nonzero}
+    .fil0 {fill:url(#id2);fill-rule:nonzero}
+    .fil2 {fill:url(#id3);fill-rule:nonzero}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="38.1096" y1="83.3473" x2="38.1096" y2="0.000115824">
+   <stop offset="0" style="stop-opacity:1; stop-color:#902D2D"/>
+   <stop offset="0.811765" style="stop-opacity:1; stop-color:#BA0000"/>
+   <stop offset="0.929412" style="stop-opacity:1; stop-color:#E12929"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#BA0000"/>
+  </linearGradient>
+  <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="38.1095" y1="11.1215" x2="38.1095" y2="0.000115824">
+   <stop offset="0" style="stop-opacity:1; stop-color:#970000"/>
+   <stop offset="0.529412" style="stop-opacity:1; stop-color:#821111"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#6D2323"/>
+  </linearGradient>
+  <linearGradient id="id2" gradientUnits="userSpaceOnUse" x1="38.1095" y1="11.1215" x2="38.1095" y2="0.000115824">
+   <stop offset="0" style="stop-opacity:1; stop-color:#520000"/>
+   <stop offset="0.0588235" style="stop-opacity:1; stop-color:#771616"/>
+   <stop offset="0.180392" style="stop-opacity:1; stop-color:#520000"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#280C0C"/>
+  </linearGradient>
+  <linearGradient id="id3" gradientUnits="userSpaceOnUse" x1="38.1095" y1="84.8394" x2="38.1095" y2="0.000115824">
+   <stop offset="0" style="stop-opacity:1; stop-color:#4B1818"/>
+   <stop offset="0.811765" style="stop-opacity:1; stop-color:#750000"/>
+   <stop offset="0.929412" style="stop-opacity:1; stop-color:#9C1C1C"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#750000"/>
+  </linearGradient>
+ </defs>
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M72 0l-34 0 -34 0c0,0 -4,0 -4,11l38 0 38 0c0,-11 -4,-11 -4,-11z"/>
+  <path class="fil1" d="M71 0l-33 0 -33 0c0,0 -4,0 -4,11l37 0 37 0c0,-11 -4,-11 -4,-11z"/>
+  <path class="fil2" d="M72 0l-68 0c0,0 6,0 6,11 0,11 0,74 0,74l28 -13 28 13 0 -74c0,-11 6,-11 6,-11z"/>
+  <path class="fil3" d="M71 0l-66 0c0,0 6,0 6,11 0,10 0,72 0,72l27 -12 27 12 0 -72c0,-11 6,-11 6,-11z"/>
+ </g>
+</svg>
