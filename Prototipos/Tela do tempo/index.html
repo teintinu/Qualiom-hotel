@@ -10,26 +10,25 @@
     <table border="1">
         <tr>
             <th></th>
-            <th>19/11</th>
-            <th>20/11</th>
-            <th>21/11</th>
-            <th>22/11</th>
-            <th>23/11</th>
-            <th>24/11</th>
-            <th>25/11</th>
-            <th>26/11</th>
-            <th>27/11</th>
-            <th>28/11</th>
-            <th>29/11</th>
-            <th>30/11</th>
-            <th>01/12</th>
-            <th>02/12</th>
-            <th>03/12</th>
-            <th>04/12</th>
-            <th>05/12</th>
-            <th>06/12</th>
-            <th>07/12</th>
-            <th>08/12</th>
+            <th id="data_atual0"></th>
+            <th id="data_atual1"></th>
+            <th id="data_atual2"></th>
+            <th id="data_atual3"></th>
+            <th id="data_atual4"></th>
+            <th id="data_atual5"></th>
+            <th id="data_atual6"></th>
+            <th id="data_atual7"></th>
+            <th id="data_atual8"></th>
+            <th id="data_atual9"></th>
+            <th id="data_atual10"></th>
+            <th id="data_atual11+"></th>
+            <th id="data_atual12"></th>
+            <th id="data_atual13"></th>
+            <th id="data_atual14"></th>
+            <th id="data_atual15"></th>
+            <th id="data_atual16"></th>
+            <th id="data_atual17"></th>
+
         </tr>
         <tr>
             <th>Quarto 1</th>
@@ -240,20 +239,20 @@
         </tr>
     </table>
     <script>
-        function dataAtualFormatada() {
-            var data = new Date();
-            var dia = data.getDate();
-            if (dia.toString().length == 1)
-                dia = "0" + dia;
-            var mes = data.getMonth() + 1;
-            if (mes.toString().length == 1)
-                mes = "0" + mes;
-            var ano = data.getFullYear();
-            return dia + "/" + mes + "/" + ano;
-        }
+        var data = new Date();
+        var dia = data.getDate();
+        var mes = data.getMonth();
+        var count = 0
 
-        alert(dataAtualFormatada());
-        var diaHoje = data.getDay;
+        for (var i = 0; i < 18; i++) {
+
+
+            if (count != 0) {
+                dia = dia + 1;
+            }
+            document.getElementById("data_atual" + count).innerHTML = dia + "/" + mes;
+            count++;
+        }
     </script>
 
 </body>
