@@ -1,12 +1,37 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="fullcalendar/fullcalendar.css" />
+    <script src="fullcalendar/lib/jquery.min.js"></script>
+    <script src="fullcalendar/lib/moment.min.js"></script>
+    <script src="fullcalendar/fullcalendar.js"></script>
 
-    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.4/css/jquery.dataTables.css">
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
-    <script src="index.js"></script>
-    <link rel="style.css"></link>
+    <head></head>
+    <script>
+        $(document).ready(function () {
+
+            // page is now ready, initialize the calendar...
+
+            $('#calendar').fullCalendar({
+
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'agendaWeek'
+                },
+                dayClick: function (date, jsEvent, view) {
+                    alert('Clicked on: ' + date.format());
+                },
+                defaultDate: '11-12-2014',
+                businessHours: false, // display business hours
+            });
+
+        });
+    </script>
+    <title>
+        Linha do Tempo
+    </title>
+>>>>>>> 0f5f83687bb69bd92ede0fa6b0e634c582888e22
 </head>
 
 
