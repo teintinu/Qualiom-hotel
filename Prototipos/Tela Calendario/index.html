@@ -27,3 +27,44 @@
 </body>
 
 </html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="fullcalendar/fullcalendar.css" />
+    <script src="fullcalendar/lib/jquery.min.js"></script>
+    <script src="fullcalendar/lib/moment.min.js"></script>
+    <script src="fullcalendar/fullcalendar.js"></script>
+
+    <head></head>
+    <script>
+        $(document).ready(function () {
+
+            // page is now ready, initialize the calendar...
+
+            $('#calendar').fullCalendar({
+
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'agendaWeek'
+                },
+                dayClick: function (date, jsEvent, view) {
+                    alert('Clicked on: ' + date.format());
+                },
+                defaultDate: '11-12-2014',
+                businessHours: false, // display business hours
+            });
+
+        });
+    </script>
+    <title>
+        Linha do Tempo
+    </title>
+</head>
+
+<body>
+    <div id="calendar"></div>
+</body>
+
+
+</html>

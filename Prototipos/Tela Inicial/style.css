@@ -10,7 +10,7 @@ header {
     width: 100%;
     padding-left: 3%;
     padding-right: 3%;
-    background-color: #7B1FA2;
+    background-color: #5dba95;
     height: 50px;
     line-height: 3;
     margin: 0 auto;
@@ -24,7 +24,7 @@ nav {
     width: 200px;
     height: 100%;
     font-size: 30px;
-    background-color: #4A148C;
+    background-color: #eaeaea;
     float: left;
     position: fixed;
 }
@@ -37,14 +37,20 @@ nav ul li {
     font-family: arial;
     padding-top: 4px;
     padding-bottom: 4px;
+    background-color: #d6d6d6;
+    border: #f0f0f0 1px solid
 }
 nav ul li:hover {
-    background-color: #AB47BC;
+    background-color: #808080;
+}
+nav ul li:hover a {
+    background-color: #808080;
+    color: #f0f0f0;
 }
 nav ul li a {
     margin-left: 20px;
     text-decoration: none;
-    color: #DCEDC8;
+    color: grey;
 }
 #conteudo {
     width: 83%;
@@ -85,13 +91,13 @@ nav ul li a {
     line-height: 2;
 }
 .ocupado {
-    background-color: #B71C1C;
+    background-color: #EF5350;
 }
 .desocupado {
-    background-color: #33691E;
+    background-color: #66BB6A;
 }
 .pedidoEspecial {
-    color: #F5F5F5;
+    color: #FFEB3B;
     width: 60px;
     height: 60px;
     background-image: url(notificacao.svg);
@@ -116,4 +122,15 @@ nav ul li a {
 }
 #quantidadePessoas {
     width: 100px;
+}
+#pesquisa {} #botaoPesquisa {
+    background: url(find.svg) center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    border: none;
+    margin-top: -3px;
+    position: absolute;
+    margin-left: 3px;
 }
