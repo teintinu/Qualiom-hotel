@@ -12,11 +12,18 @@
         <ul>
             <div ng-repeat="acomodacao in listaAcomodacoes">
                 <span class="{{acomodacao.disponibilidade}}">{{acomodacao.titulo}}</span>
-                <span ng-if="acomodacao.disponibilidade == 'ocupado'">{{acomodacao.nome}}</span>
-                <span ng-if="acomodacao.disponibilidade == 'ocupado'">{{acomodacao.dataInicio}} à {{acomodacao.dataTermino}}</span>
-                <span ng-if="acomodacao.disponibilidade == 'desocupado'">Quarto Disponivel</span>
-                <button ng-if="acomodacao.disponibilidade == 'desocupado'" ng-click="checkin()">Checkin</button>
-                <button ng-if="acomodacao.disponibilidade == 'ocupado'" ng-click="checkout()">Checkout</button>
+                <div ng-if="acomodacao.disponibilidade == 'ocupado'">
+                    <span>{{acomodacao.nome}}</span>
+                    <span>{{acomodacao.dataInicio}} à {{acomodacao.dataTermino}}</span>
+                    <button ng-click="mudar(acomodacao, true)">Checkout</button>
+                    <br/>
+                </div>
+                <div ng-if="acomodacao.disponibilidade == 'desocupado'">
+                    <span>Quarto Disponivel</span> 
+                    <button ng-click="mudar(acomodacao, false)">Checkin</button>
+                    <br/>
+                </div>
+                <br/>
             </div>
         </ul>
     </div>

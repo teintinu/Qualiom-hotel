@@ -22,5 +22,15 @@ angular.module('listadeQuartos', [])
                 disponibilidade: "desocupado"
             }];
 
+            $scope.mudar = function(acomodacao, desocupar) {
+                if (desocupar)
+                    acomodacao.disponibilidade = "desocupado";
+                else
+                    acomodacao.disponibilidade = "ocupado";
+            }
+
+
+
+
         }
     ]);
