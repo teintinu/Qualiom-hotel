@@ -1,0 +1,25 @@
+<html ng-app="listadeQuartos">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+    <script src="lista.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Lista de Quartos</h2>
+    <div ng-controller="listadeQuartosControler">
+        <ul>
+            <div ng-repeat="acomodacao in listaAcomodacoes">
+                <span class="{{acomodacao.disponibilidade}}">{{acomodacao.titulo}}</span>
+                <span ng-if="acomodacao.disponibilidade == 'ocupado'">{{acomodacao.nome}}</span>
+                <span ng-if="acomodacao.disponibilidade == 'ocupado'">{{acomodacao.dataInicio}} à {{acomodacao.dataTermino}}</span>
+                <span ng-if="acomodacao.disponibilidade == 'desocupado'">Quarto Disponivel</span>
+                <button ng-if="acomodacao.disponibilidade == 'desocupado'" ng-click="checkin()">Checkin</button>
+                <button ng-if="acomodacao.disponibilidade == 'ocupado'" ng-click="checkout()">Checkout</button>
+            </div>
+        </ul>
+    </div>
+</body>
+
+</html>
