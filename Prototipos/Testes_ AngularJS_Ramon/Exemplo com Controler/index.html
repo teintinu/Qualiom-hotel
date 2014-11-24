@@ -1,0 +1,43 @@
+<html ng-app>
+<head>
+    <title>Exemplo com Controller</title>    
+    <script src="lib/angular/angular.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+
+    <body ng-controller="controller">
+        <h3>Exemplo com DataBind</h3><br>
+        Nome: <input type="text" ng-model="usuario.nome"/>
+        <h2>Olá {{usuario.nome}}</h2>
+        <hr/><br>
+        <h3>Exemplo com ng-click</h3><br>
+        <div>
+            <a href="#" ng-click="add1()">Adiciona</a>
+            <a href="#" ng-click="zeraCont()">Zerar Contador</a>
+            <a href="#" ng-click="quadrado()">Elevar ao quadrado</a>
+        </div>
+        <br>
+        <p>Contador: {{cont}}</p>
+        <hr/><br>
+        <h3>Exemplo com ng-repeat</h3><br>
+        <ul>
+            Quartos
+            <li ng-repeat="quarto in quartos">
+                {{quarto}}
+            </li>
+        </ul>
+        <hr/><br>
+        
+        <form name="formulario">
+            <h3>Exemplo com Form</h3><br>
+            <input type="text" ng-model="nome" name="Name" value="Your Name" required/>
+            <input type="text" ng-model="email" name="Email" value="Your email" required/>
+            <button ng-disabled="formulario.$invalid">Save</button><br>
+            <span ng-show="formulario.$invalid">
+                Contem campos em branco!
+            </span>
+        </form>
+        <hr/><br>
+    </body>
+</html>

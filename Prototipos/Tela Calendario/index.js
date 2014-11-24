@@ -5,6 +5,12 @@ var suites;
 var albergs;
 var acomodacoes = [];
 
+$(document).ready(function () {
+    $('#example').dataTable({
+        "scrollY": 200,
+        "scrollX": true
+    });
+});
 
 $(document).ready(function () {
     var quarto1 = {
@@ -118,9 +124,3 @@ $(document).ready(function () {
     }
 });
 
-$(document).ready(function () {
-    $('#example').dataTable({
-        "scrollY": 200,
-        "scrollX": true
-    });
-});
