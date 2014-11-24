@@ -1,0 +1,42 @@
+<html ng-app="calendarioApp">
+
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-animate.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-route.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-aria.min.js"></script>
+    <script src="/bower_components/angular-material/angular-material.js"></script>
+    <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="/bower_components/angular-material/themes/indigo-theme.css">
+    <link rel="stylesheet" href="/bower_components/angular-material/themes/green-theme.css">
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+</head>
+
+<body ng-controller="calendarioCtrl">
+    <div>
+        <table class="agenda" border="1">
+            <thead>
+                <tr id="topo">
+                    <td>Logo</td>
+                    <td ng-repeat="dia in dias()">{{dia}}</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="quarto in quartos()">
+                    <td id="quartos">{{quarto}}</td>
+                    <td ng-repeat="dia in dias()">{{disponibilade(quarto,dia)}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="botoes">
+        <button ng-click="scrollPraTras()">Atras</button>
+        <button ng-click="scrollPraFrente()">Frente</button>
+        <button ng-click="scrollPraCima()">Cima</button>
+        <button ng-click="scrollPraBaixo()">Baixo</button>
+    </div>
+</body>
+
+</html>

@@ -1,36 +1,47 @@
-$app = angular.module('app',[ ]);
+$aplicacao = angular.module('aplicacao', []);
 
-$app.config(function($routeProvider){
+$aplicacao.config(function ($routeProvider) {
     $routeProvider.
-    when('/',{controller:listController, templateUrl:'lista.html'}).
-    when('/edit/:name',{controller:editController,templateUrl:'form.html'}).
-    when('/new',{controller:newController, templateUrl:'form.html'}).
-    otherwise({redirectTo:'/'});
- });
+    when('/', {
+        controller: listController,
+        templateUrl: 'lista.html'
+    }).
+    when('/editar/:name', {
+        controller: editController,
+        templateUrl: 'form.html'
+    }).
+    when('/novo', {
+        controller: newController,
+        templateUrl: 'form.html'
+    }).
+    otherwise({
+        redirectTo: '/'
+    });
+});
 
-$app.run(function($rootScope){
-    $rootScope.fruits = ["banana","apple","orange"];
- });
+$aplicacao.run(function ($rootScope) {
+    $rootScope.acomodacoes = ["Quartos", "Suites", "Albergues"];
+});
 
-function listController($scope){
+function listController($scope) {
 
 }
 
-function editController($scope,$location,$routeParams){
- $scope.title = "Edit fruit";
- $scope.fruit = $routeParams.name;
- $scope.fruitIndex = $scope.fruits.indexOf($scope.fruit);
- $scope.save = function(){
-    $scope.fruits[$scope.fruitIndex]=$scope.fruit;
-    $location.path('/');
- }
+function editController($scope, $location, $routeParams) {
+    $scope.title = "Editar quartos";
+    $scope.quarto = $routeParams.name;
+    $scope.quartoIndex = $scope.quartos.indexOf($scope.quarto);
+    $scope.salvar = function () {
+        $scope.quartos[$scope.quartoIndex] = $scope.quarto;
+        $location.path('/');
+    }
 }
 
-function newController($scope,$location){
- $scope.title = "New fruit";
- $scope.fruit = "";
- $scope.save = function(){
-     $scope.fruits.push($scope.fruit);
-    $location.path('/');
- }
+function newController($scope, $location) {
+    $scope.title = "Novo quarto";
+    $scope.quarto = "";
+    $scope.salvar = function () {
+        $scope.quartos.push($scope.quarto);
+        $location.path('/');
+    }
 }

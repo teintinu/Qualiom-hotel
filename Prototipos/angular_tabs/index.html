@@ -1,0 +1,51 @@
+<html ng-app>
+
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-animate.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-route.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-aria.min.js"></script>
+    <script src="/bower_components/angular-material/angular-material.js"></script>
+
+    <!-- default themes and core styles -->
+    <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+
+    <!-- extra, overriding theme files -->
+    <link rel="stylesheet" href="/bower_components/angular-material/themes/indigo-theme.css">
+    <link rel="stylesheet" href="/bower_components/angular-material/themes/green-theme.css">
+
+    <!-- Your custom JavaScript code -->
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div ng-controller="AppCtrl" class="sample">
+        <md-tabs md-selected="selectedIndex">
+            <md-tab ng-repeat="tab in tabs" md-on-select="announceSelected(tab)" md-on-deselect="announceDeselected(tab)" ng-disabled="tab.disabled" label="{{tab.title}}">
+
+                <div class="demo-tab tab{{$index%4}}" layout="column" layout-fill layout-align="space-around center">
+                    <div ng-bind="tab.content"></div>
+                    <md-button class="md-warn" ng-click="removeTab( tab )">
+                        Remove Tab
+                    </md-button>
+                </div>
+            </md-tab>
+        </md-tabs>
+        <form ng-submit="addTab(tTitle,tContent)" flex>
+            <div layout="row" layout-phone="column" layout-padding layout-align="left center">
+                <md-text-float label="Active Index" ng-model="selectedIndex" disabled></md-text-float>
+                <md-text-float label="Active Title" ng-model="tabs[selectedIndex].title"></md-text-float>
+            </div>
+            <div layout="row" layout-sm="column" layout-padding layout-align="left center">
+                <span class="title">Add a new Tab:</span>
+                <md-text-float label="Label" ng-model="tTitle"></md-text-float>
+                <md-text-float label="Content" ng-model="tContent"></md-text-float>
+                <md-button class="add-tab md-primary" type="submit" style="max-height: 40px">Add Tab</md-button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
