@@ -5,37 +5,10 @@
     <script src="fullcalendar/lib/jquery.min.js"></script>
     <script src="fullcalendar/lib/moment.min.js"></script>
     <script src="fullcalendar/fullcalendar.js"></script>
-
-    <head></head>
-    <script>
-        $(document).ready(function () {
-
-            // page is now ready, initialize the calendar...
-
-            $('#calendar').fullCalendar({
-
-                header: {
-                    left: 'prev,next today',
-                    center: 'title',
-                    right: 'agendaWeek'
-                },
-                dayClick: function (date, jsEvent, view) {
-                    alert('Clicked on: ' + date.format());
-                },
-                defaultDate: '11-12-2014',
-                businessHours: false, // display business hours
-            });
-
-        });
-    </script>
-    <title>
-        Linha do Tempo
-    </title>
->>>>>>> 0f5f83687bb69bd92ede0fa6b0e634c582888e22
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
 </head>
-
-
-
+    
 <table id="example" class="display" cellspacing="0" width="100%" on>
     <thead>
         <tr id="Dias">
@@ -49,6 +22,4 @@
         </tr>
     </tbody>
 </table>
-
-
 </html>
