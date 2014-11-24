@@ -1,0 +1,136 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+header {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: #5dba95;
+    height: 50px;
+    line-height: 3;
+    margin: 0 auto;
+    color: #4A148C;
+    position: fixed;
+    z-index: 2;
+    color: #FFFFFF;
+    box-shadow: 0px 5px 0px #E6E7E8;
+}
+nav {
+    width: 200px;
+    height: 100%;
+    font-size: 30px;
+    background-color: #eaeaea;
+    float: left;
+    position: fixed;
+}
+nav ul {
+    margin-top: 60px;
+}
+nav ul li {
+    font-size: 18px;
+    list-style: none;
+    font-family: arial;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: #d6d6d6;
+    border: #f0f0f0 1px solid
+}
+nav ul li:hover {
+    background-color: #808080;
+}
+nav ul li:hover a {
+    background-color: #808080;
+    color: #f0f0f0;
+}
+nav ul li a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: grey;
+}
+#conteudo {
+    width: 83%;
+    height: 90%;
+    margin-left: 230px;
+    margin-top: 60px;
+    position: fixed;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+#conteudo h1 {
+    font-size: 18px;
+    color: #4A148C;
+    height: 35px;
+    line-height: 2.5;
+}
+.categoria {
+    width: 100%;
+    clear: both;
+    margin-top: 10px;
+}
+.acomodacao {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    width: 50%;
+    margin: 5px;
+    height: 120px;
+    float: left;
+    box-shadow: 3px 5px 3px #E6E7E8;
+}
+.acomodacao h4 {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    color: #F5F5F5;
+    line-height: 2;
+}
+.disponivel {
+    background-color: #66BB6A;
+}
+.ocupado {
+    background-color: #EF5350;
+}
+.pedidoEspecial {
+    color: #FFEB3B;
+    width: 60px;
+    height: 60px;
+    background-image: url(notificacao.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: -37px;
+    margin-right: 5px;
+    float: right;
+}
+.pedidoEspecial span {
+    margin-top: 14px;
+    margin-left: 23px;
+    position: absolute;
+    font-size: 25px;
+    cursor: pointer;
+}
+.dadosCliente {
+    margin: 10px;
+    font-family: arial;
+    font-size: 14px;
+}
+#quantidadePessoas {
+    width: 100px;
+}
+#pesquisa {} #botaoPesquisa {
+    background: url(find.svg) center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    border: none;
+    margin-top: -3px;
+    position: absolute;
+    margin-left: 3px;
+}

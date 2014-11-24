@@ -1,0 +1,14 @@
+<md-content>
+    <div draggable class="acomodacao">
+        <h4 class="{{elem.disponibilidade}}">
+             {{elem.titulo}} 
+         </h4>
+
+        <button ng-if="elem.disponibilidade == 'disponivel'" ng-click="elem.ocupar()">Ocupar</button>
+        <button ng-if="elem.disponibilidade == 'ocupado'" ng-click="elem.desocupar()">Desocupar</button>
+        <section layout="row" layout-phone="column" layout-align="center center">
+            <md-button class="md-raised md-button md-default-theme">Botao Angular</md-button>
+
+        </section>
+    </div>
+</md-content>

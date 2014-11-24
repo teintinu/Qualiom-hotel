@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel - Lista de Acomodações</title>
+
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="angular-material.min.css" />
+
+    <script type="text/javascript" src="https://code.angularjs.org/1.3.0-rc.3/angular.min.js"></script>
+    <script type="text/javascript" src="angular-material.min.js"></script>
+    <script type="text/javascript" src="https://code.angularjs.org/1.3.0-rc.3/angular-animate.min.js"></script>
+
+    <script type="text/javascript" src="http://hammerjs.github.io/dist/hammer.min.js"></script>
+
+
+    <link rel="stylesheet" href="hotel.css" type="text/css" />
+    <script src="hotel.js"></script>
+
+</head>
+
+<body ng-app="docsIsolateScopeDirective">
+    <div ng-controller="Controller">
+
+        <hoteleeditaacomodacao elemento="x2" ng-repeat="x2 in listaAcomodacoes"></hoteleeditaacomodacao>
+
+    </div>
+</body>
+
+</html>
