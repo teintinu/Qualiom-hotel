@@ -74,23 +74,21 @@ nav ul li a {
 }
 .acomodacao {
     background-color: #FFFFFF;
-    border-radius: 15px;
-    width: 50%;
+    width: 30%;
     margin: 5px;
-    height: 120px;
+    height: 150px;
     float: left;
     box-shadow: 3px 5px 3px #E6E7E8;
 }
 .acomodacao h4 {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
     text-align: center;
     width: 100%;
-    height: 30px;
+    height: 40px;
     color: #F5F5F5;
     line-height: 2;
+    margin-top: 0px;
 }
-.disponivel {
+.desocupado {
     background-color: #66BB6A;
 }
 .ocupado {
