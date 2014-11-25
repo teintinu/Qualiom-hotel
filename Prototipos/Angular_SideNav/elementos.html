@@ -1,0 +1,15 @@
+<div id="conteudoAcomodacao">
+    <div class="acomodacao" ng-repeat="acomodacao in listaAcomodacoes">
+
+        <h4 class="{{acomodacao.disponibilidade }}"><span>{{acomodacao.titulo}}</span></h2>
+
+    <div ng-if=" acomodacao.disponibilidade=='ocupado' ">
+
+        <md-button class="md-raised md-warn " ng-click="mudar(acomodacao, true) ">Checkout</button>
+    </div>
+    <div ng-if="acomodacao.disponibilidade=='desocupado' ">
+        <md-button class="md-raised " ng-click="mudar(acomodacao, false) ">Checkin</button>
+    </div>
+    <br/>
+    </div>
+</div>
