@@ -1,0 +1,18 @@
+<html ng-app="hmTime">
+
+<head>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/hammerjs/hammer.js"></script>
+    <script src="bower_components/hammerjs/hammer.min.js"></script>
+    <script src="bower_components/ryanmullins-angular-hammer/angular.hammer.js"></script>
+    <script src="bower_components/ryanmullins-angular-hammer/angular.hammer.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div id="target" ng-controller="hmCtrl" hm-swipe="onHammer" >
+        {{eventType}}
+    </div>
+</body>
+
+</html>

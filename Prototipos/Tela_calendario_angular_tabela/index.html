@@ -1,0 +1,35 @@
+<html ng-app="calendarioApp">
+
+<head>
+    <script src="angular.js"></script>
+    <script src="hammer.js"></script>
+    <script src="hammer.min.js"></script>
+    <script src="angular.hammer.js"></script>
+    <script src="angular.hammer.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+</head>
+
+<body ng-controller="calendarioCtrl">
+    <div>
+        <div id="dias">
+            <span ng-repeat="dia in dias()">{{dia}}</span>
+        </div>
+        <table class="agenda" border="1">
+            <thead>
+                <tr id="topo">
+                    <td>Logo</td>
+                    <td ng-repeat="dia in dias()">{{dia}}</td>
+                </tr>
+            </thead>
+            <tbody hm-Pinch="onHammerPinch">
+                <tr ng-repeat="quarto in quartos()">
+                    <td id="quartos">{{quarto}}</td>
+                    <td ng-repeat="dia in dias()" hm-Swipeleft="onHammerLeft" hm-Swiperight="onHammerRigth" hm-Swipeup="onHammerUp" hm-Swipedown="onHammerDown">{{disponibilade(quarto,dia)}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
