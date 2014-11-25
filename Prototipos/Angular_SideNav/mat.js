@@ -15,11 +15,11 @@ angular.module('sidenavDemo1', ['ngMaterial', 'ngRoute'])
 
 .config(function($routeProvider) {
     $routeProvider
-        .when('/', {
+        .when('/elementos', {
             controller: 'ListaElementos',
             templateUrl: 'elementos.html'
         }).otherwise({
-            redirectTo: '/'
+            redirectTo: '/elementos'
         });
 })
 

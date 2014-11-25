@@ -32,13 +32,17 @@
                     <md-button ng-click="close()" class="md-primary" hide-gt-md>
                         Close Sidenav Left
                     </md-button>
+                    </br>
+                    <md-button ng-model="nameHeader" ng-click="close()" class="md-primary" hide-gt-md>
+                        Home
+                    </md-button>
                 </md-content>
             </md-sidenav>
             <!-- fim menu sideNav -->
 
             <md-content flex class="md-padding">
                 <md-toolbar class="md-theme-indigo">
-                    <h1 class="md-toolbar-tools">Hotel name</h1>
+                    <h1 class="md-toolbar-tools"></h1>
                 </md-toolbar>
                 <!--<div ng-if="!AppCtrl.toggleLeftOpen">
                         <md-button ng-click="toggleLeft()" class="md-primary">
