@@ -1,6 +1,6 @@
 var calendarioApp = angular.module('calendarioApp', ['hmTouchEvents']);
 
-var calendarioCtrl = calendarioApp.controller("calendarioCtrl", ['$scope',
+calendarioApp.controller("calendarioCtrl", ['$scope',
             function ($scope) {
 
         $scope.dias_primeiro_dia = 1;
