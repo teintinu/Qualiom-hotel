@@ -1,17 +1,20 @@
-module.exports = function(config) {
-  config.set({
-    basePath : '',
-    files : [
-      '../../bower_components/angular/angular.js',
-      '../../node_modukes/src/ngMidwayTester/src/ngMidwayTester.js',
-      '../../node_modukes/src/ngMidwayTester/test/lib/chai.js',
-      'indexSpec.js'
+module.exports = function (config) {
+    config.set({
+        files: [
+      'bower_components/angular/angular.js',
+   'node_modules/angular-mocks/angular-mocks.js',
+   'Prototipos/Tela_calendario_angular_tabela/lib/hammer.js',
+   'Prototipos/Tela_calendario_angular_tabela/lib/angular.hammer.js',
+   'Prototipos/Tela_calendario_angular_tabela/lib/angular.hammer.min.js',
+   'Prototipos/Tela_calendario_angular_tabela/index.js',
+      'Prototipos/Tela_calendario_angular_tabela/indexSpec2.js'
     ],
-    singleRun: true,
-    frameworks: ['jasmine'],
-    browsers: ['Chrome'],
-    proxies: {
-      '/web': 'http://localhost:9000'
-    }
-  });
+        basePath: '../../',
+        frameworks: ['jasmine'],
+        reporters: ['progress'],
+        browsers: ['Chrome'],
+        autoWatch: false,
+        singleRun: true,
+        colors: true
+    });
 };

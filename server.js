@@ -24,14 +24,3 @@ console.log("Iniciando servidor HTTP em http://localhost:" + port);
 app.listen(port);
 
 
-/*
-var express = require('express');
-var app = express();
-var path = require('path');
- 
-app.use(express.static(path.join(__dirname, 'public')));
-
-app.listen(3000);
-
-console.log("Iniciando servidor HTTP em http://localhost:3000");
-*/

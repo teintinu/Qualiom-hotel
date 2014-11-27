@@ -1,29 +1,18 @@
-describe("calendarioApp: Testando modulos", function() {
-  describe("calendarioApp", function() {
+describe("Testando tela calendario", function () {
 
-    var module;
-    before(function() {
-      module = angular.module("calendarioApp");
-    });
+    beforeEach(module('calendarioApp'));
 
-    it("Registrando", function() {
-      expect(module).not.to.equal(null);
-    });
+    it("Tesntando controller", inject(function ($controller, $rootScope) {
+        var ctrl = $controller('calendarioCtrl', {
+            $scope: $rootScope
+        });
+        expect($rootScope.dias_primeiro_dia).toBe(1);
+    }));
 
-    describe("Dependencias:", function() {
-
-      var deps;
-      var hasModule = function(m) {
-        return deps.indexOf(m) >= 0;
-      };
-      before(function() {
-        deps = module.value('appName').requires;
-      });
-
-      //you can also test the module's dependencies
-      it("should have App.Controllers as a dependency", function() {
-        expect(hasModule('calendarioApp.Controllers')).to.equal(true);
-      });
-    });
-  });
+    it("Tesntando arrayDias", inject(function ($controller, $rootScope) {
+        var ctrl = $controller('calendarioCtrl', {
+            $scope: $rootScope
+        });
+        expect($rootScope.dias).addExpectationResult(10);
+    }));
 });
