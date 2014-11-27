@@ -5,10 +5,10 @@
 
     <div ng-if=" acomodacao.disponibilidade=='ocupado' ">
 
-        <md-button class="md-raised md-warn " ng-click="mudar(acomodacao, true) ">Checkout</button>
+        <md-button class="md-raised md-warn " ng-click="mudar(acomodacao, true) ">Checkout {{acomodacao.titulo}}</button>
     </div>
     <div ng-if="acomodacao.disponibilidade=='desocupado' ">
-        <md-button class="md-raised " ng-click="mudar(acomodacao, false) ">Checkin</button>
+        <md-button class="md-raised " ng-click="mudar(acomodacao, false) ">Checkin {{acomodacao.titulo}}</button>
     </div>
     <br/>
     </div>
