@@ -13,19 +13,19 @@
 <body ng-controller="calendarioCtrl">
     <div>
         <div id="dias">
-            <span ng-repeat="dia in dias()">{{dia}}</span>
+            <!--<span ng-repeat="dia in dias()">{{dia}}</span>-->
         </div>
-        <table class="agenda" border="1">
+        <table class="agenda " border="1 ">
             <thead>
-                <tr id="topo">
+                <tr id="topo ">
                     <td>Logo</td>
-                    <td ng-repeat="dia in dias()">{{dia}}</td>
+                    <!--<td ng-repeat="dia in dias() ">{{dia}}</td>-->
                 </tr>
             </thead>
-            <tbody hm-Pinch="onHammerPinch">
-                <tr ng-repeat="quarto in quartos()">
-                    <td id="quartos">{{quarto}}</td>
-                    <td ng-repeat="dia in dias()" hm-Swipeleft="onHammerLeft" hm-Swiperight="onHammerRigth" hm-Swipeup="onHammerUp" hm-Swipedown="onHammerDown">{{disponibilade(quarto,dia)}}</td>
+            <tbody hm-Pinch="onHammerPinch ">
+                <tr ng-repeat="quarto in quartos() " hm-Swipeleft="onHammerLeft " hm-Swiperight="onHammerRigth " hm-Swipeup="onHammerUp " hm-Swipedown="onHammerDown ">
+                    <td id="quartos ">{{quarto}}</td>
+                    <!--<td ng-repeat="dia in dias() " hm-Swipeleft="onHammerLeft " hm-Swiperight="onHammerRigth " hm-Swipeup="onHammerUp " hm-Swipedown="onHammerDown ">{{disponibilade(quarto,dia)}}</td>-->
                 </tr>
             </tbody>
         </table>
