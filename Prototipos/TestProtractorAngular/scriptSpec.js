@@ -12,8 +12,8 @@ describe('Test Angular', function() {
     });
 
     it('Pegando Elemento por Classe', function() {
-        var nome = element(by.className('name'));
-        expect(nome.getText()).toEqual('zé');
+        var nome = element.all(by.className('name'));
+        expect(nome.get(1).getText()).toEqual('Marcello');
 
     });
 });
