@@ -1,17 +1,19 @@
 // spec.js
 describe('Test Angular', function() {
 
+    var cat = element.all(by.repeater('cat in pets'));
+
     beforeEach(function() {
-        browser.get('http://127.0.0.1:49491/Prototipos/TestProtractorAngular/index.html');
+        browser.get('http://127.0.0.1:52838/Prototipos/TestProtractorAngular/index.html');
     });
 
     it('Elemento', function() {
-
-        var firstCatName = element(by.repeater('cat in pets').row(0).column('{{cat.name}}'));
-        console.log(firstCatName);
-        /* var secondCat = element(by.repeater('cat in pets').row(1)).column('{{cat.name}}');
-        console.log(secondCat);
-        console.log("secondCat");*/
+        expect(cat.get(0).getText()).toEqual('zé 10');
     });
 
+    it('Pegando Elemento por Classe', function() {
+        var nome = element.all(by.className('name'));
+        expect(nome.get(1).getText()).toEqual('Marcello');
+
+    });
 });
