@@ -43,3 +43,7 @@ angular.module('sidenavDemo1', ['ngMaterial', 'ngRoute'])
             acomodacao.disponibilidade = "ocupado";
     }
 })
+
+window.addEventListener('load', function() {      
+    aplicacao_carregada();
+});

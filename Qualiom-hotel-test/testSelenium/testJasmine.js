@@ -7,16 +7,13 @@ build();
 
 describe('Teste com Side Nav Angular', function() {
 
-    beforeEach(function() {
+    it('Verificando input da Pagina', function() {
         driver.get('http://hotel-josefernandotolentino.c9.io/fw/hello.html');
-    });
-
-    it('Verificando Titulo da Pagina', function() {
         var input = driver.findElement(webdriver.By.tagName('input'));
         input.sendKeys('TEST');
 
         input.getAttribute('value').then(function(value) {
-            assert.equal(value, "MariaTEST");
+            assert.equal(value, "MariaTEsST");
         });
 
         driver.quit();

@@ -46,7 +46,6 @@ describe('Teste com Side Nav Angular', function() {
 
         expect(class_elemento_disponibilidade_depois).toEqual("ocupado");
         expect(class_elemento_disponibilidade_depois_2).toEqual("desocupado");
-        022222222222222, , , , , , , ,
         expect(class_elemento_disponibilidade_depois_3).toEqual("ocupado");
     });
 });
