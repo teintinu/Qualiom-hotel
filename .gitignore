@@ -1,2 +1,3 @@
 /node_modules
 /Prototipos/Tela_calendario_angular_tabela/bower_components
+*.log
